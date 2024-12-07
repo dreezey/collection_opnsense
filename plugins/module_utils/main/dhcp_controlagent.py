@@ -42,5 +42,3 @@ class ControlAgent(GeneralModule):
             self.m.fail_json('The provided IP is invalid!')
 
         super().check()
-        
-
