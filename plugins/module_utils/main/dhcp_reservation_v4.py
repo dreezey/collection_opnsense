@@ -33,7 +33,6 @@ class ReservationV4(BaseModule):
         'ip': 'ip_address',
         'mac': 'hw_address',
     }
-    FIELDS_IGNORE = ['subnet']  # empty field ?!
     EXIST_ATTR = 'reservation'
 
     def __init__(self, module: AnsibleModule, result: dict, session: Session = None):
