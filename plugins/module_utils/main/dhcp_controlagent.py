@@ -37,8 +37,10 @@ class ControlAgent(GeneralModule):
     def check(self) -> None:
         if not validate_port(module=self.m, port=self.p['http_port']):
             self.m.fail_json('The provided port is invalid!')
+
         if not is_ip(self.p['http_host']):
             self.m.fail_json('The provided IP is invalid!')
+
         super().check()
         
 

@@ -33,7 +33,7 @@ def run_module():
             description='Portnumber to use for the RESTful interface'
         ),
         http_host=dict(
-            type='str', required=False, default="127.0.0.1", aliases=['host'],
+            type='str', required=False, default='127.0.0.1', aliases=['host'],
             description='Address on which the RESTful interface should be available'
         ),
         **EN_ONLY_MOD_ARG,
