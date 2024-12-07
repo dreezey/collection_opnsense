@@ -25,6 +25,7 @@ TMP_DIR="/tmp/${TS}"
 mkdir -p "${TMP_DIR}"
 
 VENV_BIN='/tmp/.ag-docs-venv/bin/activate'
+
 if [ -f "$VENV_BIN" ]
 then
   source "$VENV_BIN"
