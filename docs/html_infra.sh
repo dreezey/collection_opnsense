@@ -24,7 +24,8 @@ TS="$(date +%s)"
 TMP_DIR="/tmp/${TS}"
 mkdir -p "${TMP_DIR}"
 
-VENV_BIN='/tmp/.ag-opnsense-venv/bin/activate'
+VENV_BIN='/tmp/.ag-docs-venv/bin/activate'
+
 if [ -f "$VENV_BIN" ]
 then
   source "$VENV_BIN"
@@ -43,7 +44,7 @@ HTML_META="${HTML_META}<link rel=\"icon\" type=\"image/webp\" href=\"https://fil
 HTML_META_EN="${HTML_META}"  # <link rel=\"alternate\" href=\"https://docs.o-x-l.at\" hreflang=\"de\">
 # HTML_LOGO_LINK_SRC='href=".*Go to homepage"'
 # HTML_LOGO_LINK_EN='href="https://www.o-x-l.com" class="oxl-nav-logo" title="OXL IT Services Website"'
-HTML_TITLE_BAD_EN='Ansible Collection OPNSense documentation'
+HTML_TITLE_BAD_EN='Ansible Collection - OPNSense  documentation'
 HTML_TITLE_OK='OPNSense Ansible Collection'
 HTML_LANG_NONE='<html'
 HTML_LANG_EN='html lang="en"'
