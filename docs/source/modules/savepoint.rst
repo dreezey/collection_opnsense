@@ -2,7 +2,7 @@
 
 .. include:: ../_include/head.rst
 
-.. |rollback_process| image:: https://docs.opnsense.org/_images/blockdiag-43422f611798118832d099ed58decb1437fb76a0.png
+.. |rollback_process| image:: ../../_static/img/savepoint_rollback.png
 
 ==================
 Firewall Savepoint

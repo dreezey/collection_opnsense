@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/</loc></url>
+
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/usage/1_install.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/usage/2_basic.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/usage/3_troubleshoot.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/usage/4_develop.html</loc></url>
+
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/1_basic.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/2_list.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/2_reload.html</loc></url>
+
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/alias.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/alias_multi.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/bind.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/cron.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/dhcp.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/dhcrelay_relay.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/frr_bfd.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/frr_bgp.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/frr_diagnostic.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/frr_general.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/frr_ospf.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/frr_rip.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/ids.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/interface.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/ipsec.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/monit.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/nginx.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/openvpn.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/package.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/route.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/rule.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/rule_interface_group.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/rule_multi.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/savepoint.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/service.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/shaper.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/source_nat.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/syslog.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/system.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/unbound_acl.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/unbound_dnsbl.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/unbound_dot.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/unbound_forwarding.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/unbound_general.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/unbound_host.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/unbound_host_alias.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/webproxy.html</loc></url>
+   <url><loc>https://opnsense.ansibleguy.net/en/latest/modules/wireguard.html</loc></url>
+</urlset>
