@@ -2,9 +2,9 @@
 
 .. include:: ../_include/head.rst
 
-======================
-Unbound DNS-Blocklists
-======================
+==========================
+DNS - Unbound - Blocklists
+==========================
 
 **STATE**: unstable
 
