@@ -24,7 +24,6 @@ class Peer(BaseModule):
     API_MOD = 'wireguard'
     API_CONT = 'client'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'public_key', 'psk', 'port', 'allowed_ips', 'server', 'keepalive',
     ]
@@ -41,7 +40,6 @@ class Peer(BaseModule):
         'list': ['allowed_ips'],
         'int': ['port', 'keepalive'],
     }
-    FIELDS_IGNORE = ['endpoint']  # empty field ?!
     FIELDS_DIFF_NO_LOG = ['psk']
     INT_VALIDATIONS = {
         'keepalive': {'min': 1, 'max': 86400},

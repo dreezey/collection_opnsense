@@ -24,7 +24,6 @@ class Server(BaseModule):
     API_MOD = 'wireguard'
     API_CONT = 'server'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'public_key', 'private_key', 'port', 'mtu', 'dns_servers', 'allowed_ips',
         'disable_routes', 'gateway', 'peers', 'vip',

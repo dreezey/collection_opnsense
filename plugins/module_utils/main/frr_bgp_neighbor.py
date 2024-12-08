@@ -19,7 +19,6 @@ class Neighbor(BaseModule):
     API_MOD = 'quagga'
     API_CONT = 'bgp'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'ip', 'as_number', 'password', 'weight', 'local_ip', 'source_int',
         'ipv6_link_local_int', 'next_hop_self', 'next_hop_self_all',

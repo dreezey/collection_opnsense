@@ -17,7 +17,6 @@ class Parent(GeneralModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'host', 'auth', 'user', 'password', 'port', 'local_domains', 'local_ips',
         'enabled',

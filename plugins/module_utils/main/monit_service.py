@@ -20,7 +20,6 @@ class Service(BaseModule):
     API_MOD = 'monit'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'type', 'pidfile', 'match', 'path', 'service_timeout', 'address', 'interface',
         'start', 'stop', 'tests', 'depends', 'polltime', 'description',

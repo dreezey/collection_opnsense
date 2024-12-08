@@ -18,7 +18,6 @@ class General(GeneralModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'errors', 'icp_port', 'log', 'log_store', 'log_target', 'log_ignore',
         'dns_servers', 'use_via_header', 'handling_forwarded_for',
@@ -55,7 +54,6 @@ class General(GeneralModule):
         ],
         'int': ['connect_timeout', 'icp_port'],
     }
-    FIELDS_IGNORE = ['logging', 'cache', 'traffic', 'parentproxy']
     INT_VALIDATIONS = {
         'connect_timeout': {'min': 1, 'max': 120},
         'icp_port': {'min': 1, 'max': 65535},

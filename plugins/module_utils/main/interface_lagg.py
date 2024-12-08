@@ -18,7 +18,6 @@ class Lagg(BaseModule):
     API_KEY_PATH = 'lagg.lagg'
     API_MOD = 'interfaces'
     API_CONT = 'lagg_settings'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'members', 'primary_member', 'proto', 'lacp_fast_timeout', 'use_flowid',
         'lagghash', 'lacp_strict', 'mtu', 'description'

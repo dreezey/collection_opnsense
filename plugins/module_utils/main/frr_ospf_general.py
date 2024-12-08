@@ -14,7 +14,6 @@ class General(GeneralModule):
     API_MOD = 'quagga'
     API_CONT = 'ospfsettings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'carp', 'id', 'cost', 'enabled', 'passive_ints', 'redistribute',
         'redistribute_map', 'originate', 'originate_always', 'originate_metric',
@@ -35,7 +34,6 @@ class General(GeneralModule):
         'select': ['redistribute_map'],
         'int': ['originate_metric', 'cost'],
     }
-    FIELDS_IGNORE = ['prefixlists', 'routemaps', 'networks', 'interfaces']
     INT_VALIDATIONS = {
         'cost': {'min': 1, 'max': 4294967},
         'originate_metric': {'min': 0, 'max': 16777214},

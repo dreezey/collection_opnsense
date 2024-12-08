@@ -18,7 +18,6 @@ class ControlAgent(GeneralModule):
     API_MOD = 'kea'
     API_CONT = 'ctrl_agent'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'enabled', 'http_host', 'http_port'
     ]

@@ -20,7 +20,6 @@ class Prefix(BaseModule):
     API_MOD = 'quagga'
     API_CONT = 'ospfsettings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['seq', 'action', 'network']
     FIELDS_ALL = [FIELD_ID, 'enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)

@@ -20,7 +20,6 @@ class Child(BaseModule):
     API_MOD = 'ipsec'
     API_CONT = 'connections'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'connection', 'request_id', 'esp_proposals', 'sha256_96', 'start_action',
         'close_action', 'dpd_action', 'mode', 'policies', 'local_net', 'remote_net',

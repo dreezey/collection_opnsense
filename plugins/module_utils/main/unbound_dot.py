@@ -21,7 +21,6 @@ class DnsOverTls(BaseModule):
     API_MOD = 'unbound'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['domain', 'target', 'port', 'verify']
     FIELDS_ALL = ['type', 'enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)

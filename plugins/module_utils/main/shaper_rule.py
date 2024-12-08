@@ -20,7 +20,6 @@ class Rule(BaseModule):
     API_MOD = 'trafficshaper'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'target', 'interface', 'interface2', 'protocol', 'max_packet_length',
         'source_invert', 'source_net', 'source_port', 'destination_invert',

@@ -21,7 +21,6 @@ class Gw(BaseModule):
     API_KEY_PATH = 'gateways.gateway_item'
     API_MOD = 'routing'
     API_CONT = 'settings'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'name', 'interface', 'gateway', 'default_gw', 'far_gw', 'monitor_disable', 'monitor_noroute', 'monitor',
         'force_down', 'priority', 'weight', 'latency_low', 'latency_high', 'loss_low', 'loss_high', 'interval',

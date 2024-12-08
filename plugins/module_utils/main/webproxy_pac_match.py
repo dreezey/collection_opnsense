@@ -18,7 +18,6 @@ class Match(BaseModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'negate', 'url', 'description', 'type', 'hostname', 'network',
         'domain_level_from', 'domain_level_to', 'hour_from', 'hour_to',

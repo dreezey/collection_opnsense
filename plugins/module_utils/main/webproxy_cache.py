@@ -15,7 +15,6 @@ class Cache(GeneralModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'memory_mb', 'size_mb', 'directory', 'layer_1', 'layer_2',
         'size_mb_max', 'memory_kb_max', 'memory_cache_mode',

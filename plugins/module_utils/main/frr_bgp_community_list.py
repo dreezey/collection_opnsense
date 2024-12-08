@@ -20,7 +20,6 @@ class Community(BaseModule):
     API_MOD = 'quagga'
     API_CONT = 'bgp'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['number', 'seq', 'action', 'community']
     FIELDS_ALL = [FIELD_ID, 'enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)

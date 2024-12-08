@@ -21,7 +21,6 @@ class Route(BaseModule):
     API_KEY_PATH = 'route.route'
     API_MOD = 'routes'
     API_CONT = 'routes'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['network', 'gateway', 'description']
     FIELDS_ALL = ['enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)

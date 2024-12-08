@@ -14,7 +14,6 @@ class Blocklist(GeneralModule):
     API_MOD = 'bind'
     API_CONT = 'dnsbl'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'safe_google', 'safe_duckduckgo', 'safe_youtube', 'safe_bing',
         'exclude', 'block', 'enabled',

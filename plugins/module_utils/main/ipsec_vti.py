@@ -21,7 +21,6 @@ class Vti(BaseModule):
     API_MOD = 'ipsec'
     API_CONT = 'vti'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'request_id', 'local_address', 'remote_address',
         'local_tunnel_address', 'remote_tunnel_address',

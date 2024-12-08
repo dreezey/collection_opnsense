@@ -15,7 +15,6 @@ class General(GeneralModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['method', 'group', 'prompt', 'ttl_h', 'processes']
     FIELDS_ALL = FIELDS_CHANGE
     FIELDS_TRANSLATE = {

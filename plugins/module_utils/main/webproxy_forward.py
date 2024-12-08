@@ -15,7 +15,6 @@ class General(GeneralModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'interfaces', 'port', 'port_ssl', 'transparent', 'ssl_inspection',
         'ssl_inspection_sni_only', 'ssl_ca', 'ssl_exclude', 'ssl_cache_mb',
@@ -48,7 +47,6 @@ class General(GeneralModule):
         'int': ['port', 'port_ssl', 'ssl_cache_mb', 'ssl_workers', 'port_snmp'],
         'select': ['ssl_ca'],
     }
-    FIELDS_IGNORE = ['acl', 'icap', 'authentication']
     INT_VALIDATIONS = {
         'ssl_workers': {'min': 1, 'max': 32},
         'ssl_cache_mb': {'min': 1, 'max': 65535},

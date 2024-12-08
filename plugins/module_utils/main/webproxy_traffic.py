@@ -15,7 +15,6 @@ class Traffic(GeneralModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'download_kb_max', 'upload_kb_max', 'throttle_kb_bandwidth',
         'throttle_kb_host_bandwidth', 'enabled',

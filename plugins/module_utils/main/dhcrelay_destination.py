@@ -20,7 +20,6 @@ class DhcRelayDestination(BaseModule):
     API_MOD = 'dhcrelay'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['server']
     FIELDS_ALL = [FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)

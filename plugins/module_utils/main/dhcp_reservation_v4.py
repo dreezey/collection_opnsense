@@ -20,7 +20,6 @@ class ReservationV4(BaseModule):
     API_MOD = 'kea'
     API_CONT = 'dhcpv4'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'mac', 'hostname', 'description', 'subnet'
     ]
@@ -33,7 +32,6 @@ class ReservationV4(BaseModule):
         'ip': 'ip_address',
         'mac': 'hw_address',
     }
-    FIELDS_IGNORE = ['subnet']  # empty field ?!
     EXIST_ATTR = 'reservation'
 
     def __init__(self, module: AnsibleModule, result: dict, session: Session = None):

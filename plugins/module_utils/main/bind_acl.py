@@ -20,7 +20,6 @@ class Acl(BaseModule):
     API_MOD = 'bind'
     API_CONT = 'acl'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['networks']
     FIELDS_ALL = ['enabled', FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)

@@ -14,7 +14,6 @@ class Rip(GeneralModule):
     API_MOD = 'quagga'
     API_CONT = 'rip'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'version', 'metric', 'passive_ints', 'enabled', 'networks',
         'redistribute',

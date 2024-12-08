@@ -21,7 +21,6 @@ class Pool(BaseModule):
     API_MOD = 'ipsec'
     API_CONT = 'pools'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['network']
     FIELDS_ALL = ['enabled', FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)
