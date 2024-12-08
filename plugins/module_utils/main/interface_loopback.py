@@ -16,7 +16,6 @@ class Loopback(BaseModule):
     API_KEY_PATH = 'loopback.loopback'
     API_MOD = 'interfaces'
     API_CONT = 'loopback_settings'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = []
     FIELDS_ALL = [FIELD_ID]
     FIELDS_TYPING = {}

@@ -14,7 +14,6 @@ class BaseAuth(BaseModule):
     API_MOD = 'ipsec'
     API_CONT = 'connections'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'connection', 'round', 'authentication', 'id', 'eap_id', 'certificates',
         'public_keys',

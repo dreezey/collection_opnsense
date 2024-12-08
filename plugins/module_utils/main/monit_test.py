@@ -18,7 +18,6 @@ class Test(BaseModule):
     API_MOD = 'monit'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['type', 'condition', 'action', 'path']
     FIELDS_ALL = ['name']
     FIELDS_ALL.extend(FIELDS_CHANGE)

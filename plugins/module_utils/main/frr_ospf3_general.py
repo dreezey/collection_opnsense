@@ -14,7 +14,6 @@ class General(GeneralModule):
     API_MOD = 'quagga'
     API_CONT = 'ospf6settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'carp', 'id', 'enabled', 'redistribute',
     ]

@@ -1,7 +1,5 @@
 from ansible.module_utils.basic import AnsibleModule
 
-from ansible_collections.ansibleguy.opnsense.plugins.module_utils.base.handler import \
-    ModuleSoftError
 from ansible_collections.ansibleguy.opnsense.plugins.module_utils.base.api import \
     Session
 from ansible_collections.ansibleguy.opnsense.plugins.module_utils.helper.main import \
@@ -22,7 +20,6 @@ class TMPL(BaseModule):
     API_MOD = 'API_Module'
     API_CONT = 'API_Controller'
     API_CONT_REL = 'API_Controller_reload'  # if other
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = []
     FIELDS_ALL = ['enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)
@@ -65,22 +62,3 @@ class TMPL(BaseModule):
         if not self.exists and self.p['state'] == 'present':
             if is_unset(self.p['value']):
                 self.m.fail_json('You need to provide values to create stuff!')
-
-    def _error(self, msg: str) -> None:
-        # for special handling of errors
-        if self.fail:
-            self.m.fail_json(msg)
-
-        else:
-            self.m.warn(msg)
-            raise ModuleSoftError
-
-    # @staticmethod
-    # def _simplify_existing(stuff: dict) -> dict:
-    #     return {
-    #         'enabled': is_true(stuff['enabled']),
-    #         'description': stuff['description'],
-    #         'uuid': stuff['uuid'],
-    #         'param1': stuff['param1'],
-    #         'param2': stuff['param2'],
-    #     }

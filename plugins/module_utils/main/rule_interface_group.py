@@ -19,7 +19,6 @@ class Group(BaseModule):
     API_KEY_PATH_REQ = 'group'
     API_MOD = 'firewall'
     API_CONT = 'group'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['name', 'members', 'gui_group', 'sequence', 'description']
     FIELDS_ALL = [FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)

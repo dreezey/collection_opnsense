@@ -19,7 +19,6 @@ class Interface(BaseModule):
     API_MOD = 'quagga'
     API_CONT = 'ospfsettings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'interface', 'area', 'auth_type', 'auth_key', 'auth_key_id', 'cost',
         'hello_interval', 'dead_interval', 'retransmit_interval', 'transmit_delay',

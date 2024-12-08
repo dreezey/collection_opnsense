@@ -21,7 +21,6 @@ class Alert(BaseModule):
     API_MOD = 'monit'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['recipient', 'not_on', 'events', 'format', 'reminder', 'description']
     FIELDS_ALL = ['enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)

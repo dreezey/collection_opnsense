@@ -21,7 +21,6 @@ class Server(BaseModule):
     API_MOD = 'openvpn'
     API_CONT = 'instances'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'protocol', 'port', 'address', 'mode', 'log_level', 'keepalive_interval', 'keepalive_timeout',
         'certificate', 'ca', 'key', 'authentication', 'renegotiate_time', 'network_local', 'network_remote',

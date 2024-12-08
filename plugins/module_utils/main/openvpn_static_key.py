@@ -21,7 +21,6 @@ class Key(BaseModule):
     API_MOD = 'openvpn'
     API_CONT = 'instances'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['mode', 'key']
     FIELDS_ALL = [FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)

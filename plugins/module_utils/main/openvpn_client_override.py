@@ -21,7 +21,6 @@ class Override(BaseModule):
     API_MOD = 'openvpn'
     API_CONT = 'client_overwrites'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'servers', 'description', 'block', 'push_reset', 'network_tunnel_ip4', 'network_tunnel_ip6',
         'network_local', 'network_remote', 'route_gateway', 'redirect_gateway', 'register_dns',

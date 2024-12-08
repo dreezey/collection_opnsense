@@ -16,7 +16,6 @@ class General(GeneralModule):
     API_MOD = 'bind'
     API_CONT = 'general'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'ipv6', 'response_policy_zones', 'port', 'listen_ipv4', 'listen_ipv6',
         'query_source_ipv4', 'query_source_ipv6', 'transfer_source_ipv4', 'transfer_source_ipv6',

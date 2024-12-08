@@ -18,7 +18,6 @@ class General(GeneralModule):
     API_MOD = 'ids'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'block', 'promiscuous', 'enabled', 'interfaces', 'pattern_matcher', 'local_networks', 'default_packet_size',
         'syslog_alerts', 'syslog_output', 'log_level', 'log_rotate', 'log_retention', 'log_payload',

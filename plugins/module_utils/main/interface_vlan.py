@@ -18,7 +18,6 @@ class Vlan(BaseModule):
     API_KEY_PATH = 'vlan.vlan'
     API_MOD = 'interfaces'
     API_CONT = 'vlan_settings'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['interface', 'vlan', 'priority', 'device']
     FIELDS_ALL = [FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)

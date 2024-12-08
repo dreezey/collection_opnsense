@@ -20,7 +20,6 @@ class ReservationV4(BaseModule):
     API_MOD = 'kea'
     API_CONT = 'dhcpv4'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'mac', 'hostname', 'description', 'subnet'
     ]

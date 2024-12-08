@@ -14,7 +14,6 @@ class General(GeneralModule):
     API_MOD = 'quagga'
     API_CONT = 'general'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'enabled', 'profile', 'carp', 'log', 'snmp_agentx', 'log_level',
     ]

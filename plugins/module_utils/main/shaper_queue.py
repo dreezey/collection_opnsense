@@ -20,7 +20,6 @@ class Queue(BaseModule):
     API_MOD = 'trafficshaper'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'codel_enable', 'codel_ecn_enable', 'pie_enable',  'mask',
         'pipe', 'buckets', 'codel_target', 'codel_interval', 'weight',
@@ -84,6 +83,7 @@ class Queue(BaseModule):
 
     def reload(self) -> None:
         if self.p['reset']:
+            # pylint: disable=W0201
             self.API_CMD_REL = 'flushreload'
 
         self.b.reload()

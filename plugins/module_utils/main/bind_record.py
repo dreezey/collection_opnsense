@@ -21,7 +21,6 @@ class Record(BaseModule):
     API_MOD = 'bind'
     API_CONT = 'record'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['value']
     FIELDS_ALL = ['domain', 'name', 'type', 'enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)

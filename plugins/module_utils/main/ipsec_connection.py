@@ -21,7 +21,6 @@ class Connection(BaseModule):
     API_MOD = 'ipsec'
     API_CONT = 'connections'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'local_addresses', 'remote_addresses', 'pools', 'proposals', 'unique',
         'aggressive', 'version', 'mobike', 'encapsulation', 'reauth_seconds',

@@ -20,7 +20,6 @@ class Domain(BaseModule):
     API_MOD = 'bind'
     API_CONT = 'domain'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'mode', 'primary', 'transfer_key_algo', 'transfer_key_name', 'transfer_key',
         'allow_notify', 'transfer_acl', 'query_acl', 'ttl', 'refresh', 'retry',

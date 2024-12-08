@@ -20,7 +20,6 @@ class CronJob(BaseModule):
     API_MOD = 'cron'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'minutes', 'hours', 'days', 'months',
         'weekdays', 'command', 'who', 'parameters'

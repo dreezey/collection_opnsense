@@ -22,7 +22,6 @@ class Host(BaseModule):
     API_MOD = 'unbound'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'hostname', 'domain', 'record_type', 'prio', 'value',
         'description',

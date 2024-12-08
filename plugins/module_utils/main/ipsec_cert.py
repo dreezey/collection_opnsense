@@ -20,7 +20,6 @@ class KeyPair(BaseModule):
     API_MOD = 'ipsec'
     API_CONT = 'key_pairs'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['public_key']
     FIELDS_ALL = ['name', 'private_key', 'type']
     FIELDS_ALL.extend(FIELDS_CHANGE)

@@ -21,7 +21,6 @@ class Acl(BaseModule):
     API_MOD = 'proxy'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'url', 'username', 'password', 'categories', 'verify_ssl',
         'description',

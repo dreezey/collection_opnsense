@@ -17,7 +17,6 @@ class Vip(BaseModule):
     API_KEY_PATH = 'vip.vip'
     API_MOD = 'interfaces'
     API_CONT = 'vip_settings'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'address', 'mode', 'expand', 'bind', 'gateway', 'password', 'vhid',
         'advertising_base', 'advertising_skew', 'description', 'interface',

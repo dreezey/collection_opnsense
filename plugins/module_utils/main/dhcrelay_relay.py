@@ -21,7 +21,6 @@ class DhcRelayRelay(BaseModule):
     API_MOD = 'dhcrelay'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['destination', 'agent_info']
     FIELDS_ALL = [FIELD_ID, 'enabled']
     FIELDS_ALL.extend(FIELDS_CHANGE)

@@ -20,7 +20,6 @@ class RouteMap(BaseModule):
     API_MOD = 'quagga'
     API_CONT = 'bgp'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'action', 'description', 'id', 'as_path_list', 'prefix_list',
         'community_list', 'set',

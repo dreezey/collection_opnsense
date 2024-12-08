@@ -23,7 +23,6 @@ class Syslog(BaseModule):
     API_MOD = 'syslog'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'target', 'transport', 'facility', 'program', 'level', 'certificate',
         'port', 'description',

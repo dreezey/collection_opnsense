@@ -23,7 +23,6 @@ class Policy(BaseModule):
     API_MOD = 'ids'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['priority', 'action', 'rulesets', 'new_action']
     FIELDS_ALL = ['enabled', FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)
@@ -39,7 +38,6 @@ class Policy(BaseModule):
         'list': ['rulesets', 'action'],
         'int': ['priority'],
     }
-    FIELDS_IGNORE = ['content']
     EXIST_ATTR = 'policy'
     QUERY_MAX_RULES = 5000
 

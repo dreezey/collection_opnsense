@@ -19,7 +19,6 @@ class Prefix(BaseModule):
     API_MOD = 'quagga'
     API_CONT = 'bgp'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['network', 'description', 'version', 'action']
     FIELDS_MATCH = ['seq', 'name']
     FIELDS_ALL = ['enabled']

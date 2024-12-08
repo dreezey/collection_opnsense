@@ -20,7 +20,6 @@ class Pipe(BaseModule):
     API_MOD = 'trafficshaper'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'bandwidth', 'bandwidth_metric', 'queue', 'mask', 'buckets', 'scheduler',
         'codel_enable', 'codel_target', 'codel_interval', 'codel_ecn_enable',
@@ -65,6 +64,7 @@ class Pipe(BaseModule):
 
     def reload(self) -> None:
         if self.p['reset']:
+            # pylint: disable=W0201
             self.API_CMD_REL = 'flushreload'
 
         self.b.reload()

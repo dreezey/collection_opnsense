@@ -33,6 +33,7 @@ class Base:
     ATTR_FIELD_ALL = 'FIELDS_ALL'
     ATTR_FIELD_CH = 'FIELDS_CHANGE'
     ATTR_REL_CONT = 'API_CONT_REL'
+    ATTR_REL_CMD = 'API_CMD_REL'
     ATTR_GET_CONT = 'API_CONT_GET'
     ATTR_GET_MOD = 'API_MOD_GET'
     ATTR_API_MOD = 'API_MOD'
@@ -41,6 +42,7 @@ class Base:
     ATTR_TYPING = 'FIELDS_TYPING'
     ATTR_FIELD_ID = 'FIELD_ID'  # field we use for matching
     ATTR_FIELD_PK = 'FIELD_PK'  # field opnsense uses as primary key
+    ATTR_CMDS = 'CMDS'
     PARAM_MATCH_FIELDS = 'match_fields'
     QUERY_MAX_ENTRIES = 1000
     VALUE_NO_LOG = 'VALUE_SPECIFIED_IN_NO_LOG_PARAMETER'
@@ -52,6 +54,7 @@ class Base:
         ATTR_API_CONT,
         ATTR_FIELD_ALL,
         ATTR_FIELD_CH,
+        ATTR_CMDS,
     ]
 
     def __init__(self, instance):
@@ -339,15 +342,19 @@ class Base:
     def reload(self) -> dict:
         # reload the running config
         cont_rel = self.i.API_CONT
+        cmd_rel = 'reconfigure'
 
         if hasattr(self.i, self.ATTR_REL_CONT):
             cont_rel = getattr(self.i, self.ATTR_REL_CONT)
+
+        if hasattr(self.i, self.ATTR_REL_CMD):
+            cmd_rel = getattr(self.i, self.ATTR_REL_CMD)
 
         if not self.i.m.check_mode:
             return self._api_post({
                 'module': self.i.API_MOD,
                 'controller': cont_rel,
-                'command': self.i.API_CMD_REL,
+                'command': cmd_rel,
                 'params': []
             })
 

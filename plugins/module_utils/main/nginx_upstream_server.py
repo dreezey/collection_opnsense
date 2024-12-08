@@ -19,7 +19,6 @@ class UpstreamServer(BaseModule):
     API_MOD = 'nginx'
     API_CONT = 'settings'
     API_CONT_REL = 'service'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = [
         'description', 'server', 'port', 'priority',
         'max_conns', 'max_fails', 'fail_timeout', 'no_use'
@@ -32,7 +31,6 @@ class UpstreamServer(BaseModule):
         'priority': {'min': 0, 'max': 1000000000},
         'port': {'min': 1, 'max': 65535},
     }
-    FIELDS_IGNORE = []
     EXIST_ATTR = 'upstream_server'
 
     def __init__(self, module: AnsibleModule, result: dict, session: Session = None):

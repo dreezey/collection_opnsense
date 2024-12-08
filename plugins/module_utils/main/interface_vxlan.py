@@ -18,7 +18,6 @@ class Vxlan(BaseModule):
     API_KEY_PATH = 'vxlan.vxlan'
     API_MOD = 'interfaces'
     API_CONT = 'vxlan_settings'
-    API_CMD_REL = 'reconfigure'
     FIELDS_CHANGE = ['interface', 'local', 'remote', 'group']
     FIELDS_ALL = [FIELD_ID]
     FIELDS_ALL.extend(FIELDS_CHANGE)
