@@ -195,3 +195,5 @@ plugin_routing:
       redirect: ansibleguy.opnsense.dhcrelay_relay
     dhcrelay_dst:
       redirect: ansibleguy.opnsense.dhcrelay_destination
+    unbound_domain:
+      redirect: ansibleguy.opnsense.unbound_forward
