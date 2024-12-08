@@ -117,6 +117,7 @@ class Rule(BaseModule):
 
     def reload(self) -> None:
         if self.p['reset']:
+            # pylint: disable=W0201
             self.API_CMD_REL = 'flushreload'
 
         self.b.reload()
