@@ -135,6 +135,8 @@ There are some required attributes:
 
     Fields that are parsed from API-responses and added to outbound API-calls.
 
+    If the API-response has fields/values inside a nested-dict - you currently have to handle them manually. In that case do not add the nested-field inside this config-attribute. To handle them manually add the :code:`_search_call` and :code:`_build_request` methods. Per example see: `webproxy_general <https://github.com/ansibleguy/collection_opnsense/blob/latest/plugins/module_utils/main/webproxy_general.py>`_.
+
 * :code:`FIELDS_CHANGE`
 
     The fields that should be checked for changes.
