@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/shaper.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/shaper.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/shaper.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/shaper.html'
 
 
 def run_module():

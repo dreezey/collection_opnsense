@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/_tmpl.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/_tmpl.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/_tmpl.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/_tmpl.html'
 
 
 def run_module():

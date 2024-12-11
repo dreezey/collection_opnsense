@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/rule_interface_group.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/rule_interface_group.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/rule_interface_group.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/rule_interface_group.html'
 
 
 def run_module():

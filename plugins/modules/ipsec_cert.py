@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/ipsec.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/ipsec.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/ipsec.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/ipsec.html'
 
 
 def run_module():

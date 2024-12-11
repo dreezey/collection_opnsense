@@ -23,8 +23,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/source_nat.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/source_nat.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/source_nat.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/source_nat.html'
 
 
 def run_module():
