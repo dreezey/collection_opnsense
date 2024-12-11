@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/ids.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/ids.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/ids.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/ids.html'
 
 ACTION_MAPPING = {
     'get_alert_info': {'a': 'getAlertInfo', 'post': False},

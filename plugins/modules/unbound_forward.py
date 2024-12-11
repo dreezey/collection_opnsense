@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/unbound_forwarding.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/unbound_forwarding.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/unbound_forwarding.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/unbound_forwarding.html'
 
 
 def run_module():

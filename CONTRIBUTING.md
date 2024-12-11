@@ -15,4 +15,4 @@ Thank you for considering to contribute to this project!
 
 ## Module development
 
-See: [Documentation - Development](https://opnsense.ansibleguy.net/en/latest/usage/4_develop.html)
+See: [Documentation - Development](https://opnsense.ansibleguy.net/usage/4_develop.html)

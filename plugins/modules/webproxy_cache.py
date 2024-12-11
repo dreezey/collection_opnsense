@@ -19,8 +19,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/webproxy.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/webproxy.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/webproxy.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/webproxy.html'
 
 BLANK_VALUES = {
     'memory_cache_mode': 'default',

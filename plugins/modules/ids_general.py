@@ -20,8 +20,8 @@ try:
 except MODULE_EXCEPTIONS:
     module_dependency_error()
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/ids.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/ids.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/ids.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/ids.html'
 
 
 def run_module():

@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/dhcrelay_relay.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/dhcrelay_relay.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/dhcrelay_relay.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/dhcrelay_relay.html'
 
 
 def run_module():

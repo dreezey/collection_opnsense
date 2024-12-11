@@ -23,8 +23,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/openvpn.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/openvpn.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/openvpn.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/openvpn.html'
 
 
 def run_module():

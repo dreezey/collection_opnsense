@@ -21,8 +21,8 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/cron.html'
-# EXAMPLES = 'https://opnsense.ansibleguy.net/en/latest/modules/cron.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/cron.html'
+# EXAMPLES = 'https://opnsense.ansibleguy.net/modules/cron.html'
 
 
 def run_module():

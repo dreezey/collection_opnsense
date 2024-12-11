@@ -22,7 +22,7 @@ except MODULE_EXCEPTIONS:
     module_dependency_error()
 
 
-# DOCUMENTATION = 'https://opnsense.ansibleguy.net/en/latest/modules/alias_multi.html'
+# DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/alias_multi.html'
 # EXAMPLES = 'https://github.com/ansibleguy/collection_opnsense/blob/latest/docs/tests/alias_multi.yml'
 
 
