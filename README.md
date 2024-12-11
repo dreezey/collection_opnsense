@@ -39,6 +39,8 @@ See: [Docs](https://opnsense.ansibleguy.net)
 
 [![Docs Uptime](https://status.oxl.at/api/v1/endpoints/4--ansibleguy_ansible-collection---opnsense-documentation/uptimes/7d/badge.svg)](https://status.oxl.at/endpoints/4--ansibleguy_ansible-collection---opnsense-documentation)
 
+[Alternative Link](https://opnsense-ansible.readthedocs.io/)
+
 If you DO NOT want to use Ansible - [this fork](https://github.com/O-X-L/opnsense-api-client) provides you with a raw Python3 interface.
 
 ----
