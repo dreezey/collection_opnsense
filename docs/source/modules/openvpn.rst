@@ -77,7 +77,7 @@ ansibleguy.opnsense.openvpn_server
     "register_dns","boolean","false","false","\-","Run ipconfig /flushdns and ipconfig /registerdns on connection initiation. This is known to kick Windows into recognizing pushed DNS servers."
     "ocsp","boolean","false","false","use_ocsp, verify_ocsp","When the CA used supplies an authorityInfoAccess OCSP URI extension, it will be used to validate the client certificate."
     "user_as_cn","boolean","false","false","username_as_cn","Use the authenticated username as the common-name, rather than the common-name from the client certificate."
-    "user_cn_strict","boolean","false","false","username_cn_strict","When authenticating users, enforce a match between the Common Name of the client certificate and the username given at login."
+    "user_cn_strict","string","false","no","username_cn_strict","One of: 'yes', 'no', 'case-insensitive', 'ci', 'true', 'false'. When authenticating users, enforce a match between the Common Name of the client certificate and the username given at login."
     "mss_fix","boolean","false","false","mss","Announce to TCP sessions running over the tunnel that they should limit their send packet sizes such that after OpenVPN has encapsulated them, the resulting UDP packet size that OpenVPN sends to its peer will not exceed the recommended size."
     "reload","boolean","false","true","\-", .. include:: ../_include/param_reload.rst
 
@@ -235,7 +235,7 @@ ansibleguy.opnsense.openvpn_server
             # ntp_servers: []
             # register_dns: false
             # user_as_cn: false
-            # user_cn_strict: false
+            # user_cn_strict: 'yes'
             # mss_fix: false
             # reload: true
             # enabled: true
@@ -265,7 +265,7 @@ ansibleguy.opnsense.openvpn_server
             data_ciphers: ['AES-256-GCM', 'CHACHA20-POLY1305']
             max_connections: 100
             user_as_cn: true
-            user_cn_strict: true
+            user_cn_strict: 'yes'
             push_options: ['block-outside-dns', 'register-dns']
             mtu: 1420
 
@@ -283,7 +283,7 @@ ansibleguy.opnsense.openvpn_server
             data_ciphers: ['AES-256-GCM', 'CHACHA20-POLY1305']
             max_connections: 100
             user_as_cn: true
-            user_cn_strict: true
+            user_cn_strict: 'yes'
             push_options: ['block-outside-dns', 'register-dns']
             mtu: 1420
             enabled: false
