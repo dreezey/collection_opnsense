@@ -64,7 +64,7 @@ class Server(BaseModule):
         'data_cipher_fallback': 'data-ciphers-fallback',
     }
     FIELDS_TYPING = {
-        'bool': ['enabled', 'mss_fix', 'ocsp', 'user_as_cn', 'user_cn_strict', 'register_dns'],
+        'bool': ['enabled', 'mss_fix', 'ocsp', 'user_as_cn', 'register_dns'],
         'list': [
             'network_local', 'network_remote', 'options', 'data_ciphers', 'auth_mode', 'push_options',
             'redirect_gateway', 'domain_list', 'dns_servers', 'ntp_servers',
@@ -74,7 +74,7 @@ class Server(BaseModule):
             'mode', 'protocol', 'role', 'topology', 'crl', 'verify_client_cert', 'cert_depth',
             'data_cipher_fallback', 'auth_group',
         ],
-        'select_opt_list_idx': ['log_level'],
+        'select_opt_list_idx': ['log_level', 'user_cn_strict'],
         'int': ['fragment_size', 'mtu', 'route_metric'],
     }
     INT_VALIDATIONS = {

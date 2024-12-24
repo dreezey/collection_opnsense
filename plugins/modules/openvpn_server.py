@@ -26,6 +26,16 @@ except MODULE_EXCEPTIONS:
 # DOCUMENTATION = 'https://opnsense.ansibleguy.net/modules/openvpn.html'
 # EXAMPLES = 'https://opnsense.ansibleguy.net/modules/openvpn.html'
 
+USER_CN_STRICT_MAP = {
+    'no': 0,
+    'false': 0,
+    'False': 0,
+    'yes': 1,
+    'true': 1,
+    'True': 1,
+    'case-insensitive': 2,
+    'ci': 2,
+}
 
 def run_module():
     module_args = dict(
@@ -112,7 +122,8 @@ def run_module():
                         'from the client certificate.'
         ),
         user_cn_strict=dict(
-            type='bool', required=False, default=False, aliases=['username_cn_strict'],
+            type='str', required=False, default=False, aliases=['username_cn_strict'],
+            choices=list(USER_CN_STRICT_MAP.keys()),
             description='When authenticating users, enforce a match between the Common Name of the client '
                         'certificate and the username given at login.'
         ),
@@ -174,6 +185,7 @@ def run_module():
     )
 
 
+
     result = dict(
         changed=False,
         diff={
@@ -186,6 +198,8 @@ def run_module():
         argument_spec=module_args,
         supports_check_mode=True,
     )
+
+    module.params['user_cn_strict'] = USER_CN_STRICT_MAP[module.params['user_cn_strict']]
 
     module_wrapper(Server(module=module, result=result))
     module.exit_json(**result)
